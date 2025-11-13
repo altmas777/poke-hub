@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Normal from './pages/Normal'
 import Hard from './pages/Hard'
 import Easy from './pages/Easy'
-import MainPage from './pages/mainpage'
+import MainPage from './pages/MainPage'
 
 
 const App = () => {

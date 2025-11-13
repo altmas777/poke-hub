@@ -3,7 +3,7 @@ import { BrowserRouter as Router , Routes , Route } from 'react-router-dom'
 import { PokeProvider } from './context/PokeContext'
 import Navbar from './components/Navbar'
 import Normal from './pages/Normal'
-import Hard from './pages/hard'
+import Hard from './pages/Hard'
 import Easy from './pages/Easy'
 import MainPage from './pages/mainpage'
 

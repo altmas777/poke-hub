@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Easy from './Easy'
+import Normal from './Normal'
+import Hard from './Hard'
 
 const mainpage = () => {
   return (
@@ -46,8 +50,7 @@ const mainpage = () => {
             {/* Easy Link */}
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-green-400 to-emerald-600 rounded-2xl blur opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <a
-                href="/easy"
+              <Link to={"/easy"}
                 className="relative w-full bg-gradient-to-r from-green-500 to-emerald-700 border-2 border-green-300 text-white rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 shadow-2xl block"
               >
                 <div className="flex items-center justify-between">
@@ -62,14 +65,13 @@ const mainpage = () => {
                   </div>
                   <div className="text-7xl font-bold opacity-20 group-hover:opacity-40 transition-opacity">★</div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             {/* Normal Link */}
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-indigo-600 rounded-2xl blur opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <a
-                href="/normal"
+              <Link to={"/normal"}
                 className="relative w-full bg-gradient-to-r from-blue-500 to-indigo-700 border-2 border-blue-300 text-white rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 shadow-2xl block"
               >
                 <div className="flex items-center justify-between">
@@ -84,14 +86,13 @@ const mainpage = () => {
                   </div>
                   <div className="text-7xl font-bold opacity-20 group-hover:opacity-40 transition-opacity">★★</div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             {/* Hard Link */}
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-red-500 to-rose-700 rounded-2xl blur opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <a
-                href="/hard"
+              <Link to={"/hard"}
                 className="relative w-full bg-gradient-to-r from-red-600 to-rose-800 border-2 border-red-300 text-white rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 shadow-2xl block"
               >
                 <div className="flex items-center justify-between">
@@ -106,7 +107,7 @@ const mainpage = () => {
                   </div>
                   <div className="text-7xl font-bold opacity-20 group-hover:opacity-40 transition-opacity">★★★</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
